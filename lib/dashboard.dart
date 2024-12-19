@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sabji_mandi/modules/dashboard/freshVegetable/fresh_vegetable.dart';
 import 'package:sabji_mandi/modules/dashboard/lookingForWidget/looking_for_widget_page.dart';
 import 'package:sabji_mandi/modules/dashboard/promos/promos_card.dart';
+import 'package:sabji_mandi/widgets/button_with_text_vertically.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
@@ -71,26 +72,17 @@ class Dashboard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.home,
-                  color: Colors.white,
-                ),
+              ButtonWithTextVertically(
+                title: "Home",
+                icon: Icons.home,
               ),
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.people,
-                  color: Colors.white,
-                ),
+              ButtonWithTextVertically(
+                title: "Profile",
+                icon: Icons.people,
               ),
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.whatshot,
-                  color: Colors.white,
-                ),
+              ButtonWithTextVertically(
+                title: "News",
+                icon: Icons.whatshot,
               ),
             ],
           ),
